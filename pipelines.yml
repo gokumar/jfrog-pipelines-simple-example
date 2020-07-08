@@ -6,6 +6,12 @@ resources:
       path: gokumar/jfrog-pipelines-simple-example
       branches:
         include: master
+  - name: myBuildInfo
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: SampleApp
+      buildNumber: 1  
 pipelines:  
   - name: basic_pipeline
     configuration:
